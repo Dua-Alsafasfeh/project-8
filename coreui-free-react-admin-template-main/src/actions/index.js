@@ -1,12 +1,12 @@
 // import { type } from '@testing-library/user-event/dist/types/utility'
 
 export const username = (username) => {
-  return 
+  return
     type: 'username',
     username,
 }
 
-export const password = (password) => {
+export const password = ( password ) => {
   return 
     type: 'password',
     password,
