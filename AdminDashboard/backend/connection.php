@@ -4,19 +4,19 @@ header('Access-Control-Allow-Origin: *');
 $dbservername = "localhost";
 $dbname = "admin-redux";
 $dbusername = "root";
-$password = "";
+$password = "admin-redux";
 
 
 $sql = "mysql:host=$dbservername;dbname=$dbname";
 $conn = new PDO($sql,$dbusername,$password);
 
-if($conn)
-{
+// if($conn)
+// {
     
-echo "connection succesed";
+// echo "connection succesed";
 
-}else
-{
-    echo "connection failed";
-}
+// }else
+// {
+//     echo "connection failed";
+// }
 ?>

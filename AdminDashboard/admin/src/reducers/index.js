@@ -1,7 +1,8 @@
-import {combineReducers} from 'redux';
-import loginReducer from './loginRed';
+import { combineReducers } from 'redux'
+import userReducer from './usersRed'
+import  loginReducer  from './loginRed'
 
-const AllReducers=combineReducers({
-    login: loginReducer,    
-});
-export default AllReducers;
+export default combineReducers({ // To collect all the reducers
+  users: userReducer,
+  login: loginReducer
+})
