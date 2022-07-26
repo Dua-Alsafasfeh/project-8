@@ -12,15 +12,19 @@ body {
     height: 100%;
     position: fixed;
     z-index: -1;
-    background-color: #111;
+    background-color: #0C084C;
     overflow-x: hidden;
     padding-top: 20px;
     z-index: 1000;
+    top: 7.3%;
   }
   
   .admin-header {
-    background: #101010;
+    background: #00B7A8;
     padding: 15px 16px;
+    position: fixed;
+    width: 100%;
+
   }
   
   .header-greet {
@@ -31,11 +35,11 @@ body {
   h3 {
     margin: 0;
     display: inline-block;
-    /* color: ; */
+    color: #0C084C;
   }
   
   .header-text {
-    color: #999;
+    color: #0C084C;
   }
   
   .logout-btn {
@@ -61,7 +65,7 @@ body {
   
   a {
     text-decoration: none;
-    color: #999;
+    color: #00B7A8;
   }
   
   .search-input {
