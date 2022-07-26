@@ -37,7 +37,7 @@ class Users extends Component {
                 <span>
                   <i className="fa"></i> Hello Admin
                 </span>
-                <a href="" className="logout-btn">
+                <a href="/" className="logout-btn">
                   <i className="fa"></i>
                 </a>
               </div>
@@ -108,13 +108,13 @@ class Users extends Component {
               <section>
                 <>
                   {/* Card */}
-                  <div>
+                  <div className='row ml-5 mt-5'>
                   {users.map(u =>
                   <div className="card"  key={u.id} style={{ display: this.state.deleteButton ? 'inline' : 'none' }} id={u.id}>
                     {/* Card image */}
-                    <div className="view overlay">
+                    <div className="col-md-6 view overlay">
                       <img
-                        className="card-img w-25"
+                        className="card-img w-100"
                         src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).webp"
                         alt="Card image cap"
                       />
@@ -123,17 +123,19 @@ class Users extends Component {
                       </a>
                     </div>
                     {/* Card content */}
-                    <div className="card-body">
+                    <div className="card-body col-md-12">
                       {/* Title */}
                       <h4 className="card-title">Name : {u.name}</h4>
                       <h4 className="card-title">Email : {u.email}</h4>
                       <h4 className="card-title">Phone :{u.phone}</h4>
-                      <h4 className="card-title">Website{u.website}</h4>
+                      <h4 className="card-title">Website :{u.website}</h4>
                       {/* Text */}
                       {/* Button */}
                       <span class='info-box-footer'>
-                        <button onClick={() => this.handleButton(u.id)}><a href='#' class='user-href'><span class="pull-left">Delete</span>
-                        <span class='pull-right'><i class="fa-solid fa-trash"></i></span></a>
+                        <button onClick={() => this.handleButton(u.id)}><a href='#' class='user-href btn btn-info' ><span class="pull-left">Delete</span>
+                        {/* <span class='pull-right'><i class='fa-solid fa-trash'></i>
+                        </span> */}
+                        </a>
                         </button>
                       </span>
                       {/* <a href="#" className="btn btn-primary">

@@ -16,14 +16,17 @@ body {
     overflow-x: hidden;
     padding-top: 20px;
     z-index: 1000;
-    top: 7.3%;
+    top: 8.6%;
   }
-  
+  button{
+    border: none;
+  }
   .admin-header {
     background: #00B7A8;
     padding: 15px 16px;
     position: fixed;
     width: 100%;
+    z-index: 1;
 
   }
   
